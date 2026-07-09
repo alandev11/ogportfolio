@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Ulrix Alan Joshy — Portfolio</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;700;800&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- BOOT SCREEN -->
+  <div id="boot-screen">
+    <div class="boot-line">$ initializing_portfolio.sh</div>
+    <div class="boot-line">$ loading modules<span class="dots"></span></div>
+    <div class="boot-line boot-ok">✓ ready</div>
+    <div class="boot-bar"><div class="boot-bar-fill"></div></div>
+  </div>
+
+  <!-- SIDEBAR NAV (activity bar style) -->
+  <nav id="sidebar">
+    <div class="logo">&lt;UA/&gt;</div>
+    <ul class="nav-links">
+      <li><a href="#home" class="nav-link active" data-section="home"><span class="nav-num">01</span>home</a></li>
+      <li><a href="#about" class="nav-link" data-section="about"><span class="nav-num">02</span>about</a></li>
+      <li><a href="#skills" class="nav-link" data-section="skills"><span class="nav-num">03</span>skills</a></li>
+      <li><a href="#projects" class="nav-link" data-section="projects"><span class="nav-num">04</span>projects</a></li>
+      <li><a href="#experience" class="nav-link" data-section="experience"><span class="nav-num">05</span>experience</a></li>
+      <li><a href="#contact" class="nav-link" data-section="contact"><span class="nav-num">06</span>contact</a></li>
+    </ul>
+    <div class="sidebar-footer">
+      <span class="status-dot"></span> available for work
+    </div>
+  </nav>
+
+  <!-- MOBILE NAV TOGGLE -->
+  <button id="nav-toggle" aria-label="Toggle navigation">
+    <span></span><span></span><span></span>
+  </button>
+
+  <main>
+
+    <!-- HERO -->
+    <section id="home" class="section hero">
+      <div class="terminal-window">
+        <div class="terminal-bar">
+          <span class="dot red"></span><span class="dot yellow"></span><span class="dot green"></span>
+          <span class="terminal-title">visitor.js</span>
+        </div>
+        <div class="terminal-body">
+          <p><span class="prompt">&gt;</span> const developer = {</p>
+          <p class="indent">name: <span class="str">"Ulrix Alan Joshy"</span>,</p>
+          <p class="indent">role: <span class="str">"CS Engineering Student"</span>,</p>
+          <p class="indent">status: <span class="type-cursor" id="typed-status"></span></p>
+          <p>};</p>
+        </div>
+      </div>
+      <h1 class="hero-title">Building things.<br>Breaking things.<br>Learning either way.</h1>
+      <p class="hero-sub">I'm a student developer figuring out how software gets made — one bug, one commit, and one late night at a time.</p>
+      <div class="hero-cta">
+        <a href="#projects" class="btn btn-primary">view projects</a>
+        <a href="#contact" class="btn btn-ghost">get in touch</a>
+      </div>
+      <div class="scroll-hint">scroll <span class="arrow">↓</span></div>
+    </section>
+
+    <!-- ABOUT -->
+    <section id="about" class="section">
+      <div class="section-head">
+        <span class="section-num">02</span>
+        <h2>about<span class="accent">.json</span></h2>
+      </div>
+      <div class="about-grid">
+        <div class="code-block">
+<pre><span class="brace">{</span>
+  <span class="key">"name"</span>: <span class="str">"Ulrix Alan Joshy"</span>,
+  <span class="key">"education"</span>: <span class="str">"B.Tech, Computer Science Engineering"</span>,
+  <span class="key">"college"</span>: <span class="str">"Christ College of Engineering"</span>,
+  <span class="key">"location"</span>: <span class="str">"Kerala, India"</span>,
+  <span class="key">"currently_learning"</span>: [<span class="str">"DSA"</span>, <span class="str">"Web Dev"</span>],
+  <span class="key">"interests"</span>: [<span class="str">"coding"</span>, <span class="str">"tech"</span>]
+<span class="brace">}</span></pre>
+        </div>
+        <div class="about-text">
+          <p>Hey, I'm <strong>Ulrix Alan Joshy</strong>, a Computer Science Engineering student at Christ College of Engineering. I'm still early in my coding journey — learning by building small things, breaking them, and figuring out why.</p>
+          <p>I don't have years of experience yet, and I'm not pretending to. What I do have is curiosity and consistency — I'm working through the fundamentals of programming, data structures, and web development one project at a time.</p>
+          <div class="about-stats">
+            <div class="stat"><span class="stat-num">3+</span><span class="stat-label">beginner projects</span></div>
+            <div class="stat"><span class="stat-num">1st</span><span class="stat-label">year of coding</span></div>
+            <div class="stat"><span class="stat-num">∞</span><span class="stat-label">things left to learn</span></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SKILLS -->
+    <section id="skills" class="section">
+      <div class="section-head">
+        <span class="section-num">03</span>
+        <h2>skills<span class="accent">.map()</span></h2>
+      </div>
+      <div class="skills-grid">
+        <div class="skill-category">
+          <h3>Languages</h3>
+          <div class="tag-list">
+            <span class="tag">C++</span>
+            <span class="tag">Python</span>
+            <span class="tag">JavaScript</span>
+            <span class="tag">HTML</span>
+            <span class="tag">CSS</span>
+          </div>
+        </div>
+        <div class="skill-category">
+          <h3>Tools & Platforms</h3>
+          <div class="tag-list">
+            <span class="tag">Git / GitHub</span>
+            <span class="tag">VS Code</span>
+            <span class="tag">Linux</span>
+            <span class="tag">Figma</span>
+          </div>
+        </div>
+        <div class="skill-category">
+          <h3>Currently Learning</h3>
+          <div class="tag-list">
+            <span class="tag tag-learning">Data Structures</span>
+            <span class="tag tag-learning">React</span>
+            <span class="tag tag-learning">Node.js</span>
+            <span class="tag tag-learning">SQL</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- PROJECTS -->
+    <section id="projects" class="section">
+      <div class="section-head">
+        <span class="section-num">04</span>
+        <h2>projects<span class="accent">.list()</span></h2>
+      </div>
+      <div class="projects-grid">
+
+        <article class="project-card">
+          <div class="project-top">
+            <span class="project-tag">web app</span>
+            <span class="project-status">beginner</span>
+          </div>
+          <h3>To-Do List App</h3>
+          <p>A simple task manager to add, complete, and delete daily to-dos, with tasks saved in the browser using local storage.</p>
+          <div class="tag-list small">
+            <span class="tag">HTML</span><span class="tag">CSS</span><span class="tag">JS</span>
+          </div>
+          <div class="project-links">
+            <a href="#" class="proj-link">code →</a>
+            <a href="#" class="proj-link">live demo →</a>
+          </div>
+        </article>
+
+        <article class="project-card">
+          <div class="project-top">
+            <span class="project-tag">tool</span>
+            <span class="project-status">beginner</span>
+          </div>
+          <h3>Basic Calculator</h3>
+          <p>A functioning calculator built from scratch to practice DOM manipulation and handling operator logic in JavaScript.</p>
+          <div class="tag-list small">
+            <span class="tag">HTML</span><span class="tag">CSS</span><span class="tag">JS</span>
+          </div>
+          <div class="project-links">
+            <a href="#" class="proj-link">code →</a>
+            <a href="#" class="proj-link">live demo →</a>
+          </div>
+        </article>
+
+        <article class="project-card">
+          <div class="project-top">
+            <span class="project-tag">practice</span>
+            <span class="project-status">beginner</span>
+          </div>
+          <h3>Number Guessing Game</h3>
+          <p>A simple C++ console game where the computer picks a random number and the player tries to guess it in the fewest tries.</p>
+          <div class="tag-list small">
+            <span class="tag">C++</span><span class="tag">Logic</span>
+          </div>
+          <div class="project-links">
+            <a href="#" class="proj-link">code →</a>
+            <a href="#" class="proj-link">live demo →</a>
+          </div>
+        </article>
+
+      </div>
+    </section>
+
+    <!-- EXPERIENCE / EDUCATION TIMELINE -->
+    <section id="experience" class="section">
+      <div class="section-head">
+        <span class="section-num">05</span>
+        <h2>experience<span class="accent">.log</span></h2>
+      </div>
+      <div class="timeline">
+        <div class="timeline-item">
+          <div class="timeline-dot"></div>
+          <div class="timeline-content">
+            <span class="timeline-date">2024 — present</span>
+            <h3>B.Tech, Computer Science Engineering</h3>
+            <p>Christ College of Engineering. Building a foundation in programming, data structures, and core CS concepts.</p>
+          </div>
+        </div>
+        <div class="timeline-item">
+          <div class="timeline-dot"></div>
+          <div class="timeline-content">
+            <span class="timeline-date">2024</span>
+            <h3>Started learning to code</h3>
+            <p>Picked up HTML, CSS, JS, and C++ fundamentals and started building small beginner projects to practice.</p>
+          </div>
+        </div>
+        <div class="timeline-item">
+          <div class="timeline-dot"></div>
+          <div class="timeline-content">
+            <span class="timeline-date">upcoming</span>
+            <h3>Open to internships</h3>
+            <p>Looking for opportunities to apply what I'm learning in a real team setting.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CONTACT -->
+    <section id="contact" class="section contact-section">
+      <div class="section-head">
+        <span class="section-num">06</span>
+        <h2>contact<span class="accent">.send()</span></h2>
+      </div>
+      <div class="contact-wrap">
+        <div class="contact-info">
+          <p>Have a project, an internship, or just want to talk code? My inbox is open.</p>
+          <a href="mailto:your.email@example.com" class="contact-email">your.email@example.com</a>
+          <div class="social-links">
+            <a href="#" class="social-link">GitHub</a>
+            <a href="#" class="social-link">LinkedIn</a>
+            <a href="#" class="social-link">Twitter / X</a>
+          </div>
+        </div>
+        <form class="contact-form" id="contact-form">
+          <label for="name">name</label>
+          <input type="text" id="name" name="name" placeholder="Jane Doe" required>
+          <label for="email">email</label>
+          <input type="email" id="email" name="email" placeholder="jane@example.com" required>
+          <label for="message">message</label>
+          <textarea id="message" name="message" rows="4" placeholder="Let's build something..." required></textarea>
+          <button type="submit" class="btn btn-primary full">send message</button>
+          <p class="form-note" id="form-note"></p>
+        </form>
+      </div>
+    </section>
+
+    <footer class="footer">
+      <p>designed &amp; built by Ulrix Alan Joshy — © <span id="year"></span></p>
+    </footer>
+
+  </main>
+
+<script src="script.js"></script>
+</body>
+</html>
